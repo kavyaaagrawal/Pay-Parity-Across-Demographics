@@ -1,0 +1,13 @@
+File Descriptions
+1. pay_parity_5_states_master_dataset.csv.gz: 
+This is the primary cleaned ACS dataset used for modeling and analysis. It contains demographic, occupational, wage, education, and employment-related variables across five U.S. states. The dataset is used for wage prediction, leadership classification, intersectional analysis, and counterfactual gender comparisons. The 5 states we took are California, Texas, Illinois, New York, Florida.
+2. Census-2022-Occupation-Index_Final.xlsx:
+This file contains the occupational hierarchy and seniority mapping constructed using 2022 Census occupation codes. It is used to classify occupations into leadership and non-leadership levels, enabling the model to estimate the probability of individuals reaching senior occupational positions.
+3. 2022-Census-Industry-Code-List-with-Crosswalk.xlsx: 
+This file provides the Census industry code mappings and industry crosswalks used to group workers by sector. It enables sector-level analysis of wage gaps and leadership disparities across industries and supports the identification of industries with the highest structural inequality
+4. payparity_model.ipynb:
+This file contains our code for feature preprocessing and training 3 different models using XGBoost. We apply SHAP to see the explained and unexplained gap.
+5. neural_network_payparity_model.ipynb:
+This file contains our neural network model using CNN. We see the confusion matrix and compare it with our XGBoost model
+6. promotion_parity.ipynb:
+Here we have made an attempt to see promotion parity by creating a new feature called eliteleadership using occupation title, industry code and salary. We then train the model to predict whether someone is an elite leader or not. 
